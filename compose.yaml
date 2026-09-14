@@ -1,0 +1,15 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./ha-config:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: bridge
+    environment:
+      - TZ=Europe/Berlin
+      - HA_URL=http://localhost:8123
+    ports:
+      - "8123:8123"
