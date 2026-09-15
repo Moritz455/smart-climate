@@ -1,2 +1,104 @@
-# Todo
-ha-config
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+*.egg-info/
+.dist/
+build/
+develop-eggs/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.rbx/
+*.manifest
+*.spec
+python-version.txt
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.docker/
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+Dockerfile.local
+.env
+.env.*
+!.env.example
+*.pid
+*.sock
+
+# Logs
+*.log
+logs/
+
+# Home Assistant
+ha-config/
+ha-config/.storage/
+ha-config/*.db
+ha-config/*.db-wal
+ha-config/*.db-shm
+ha-config/home-assistant.log
+ha-config/home-assistant.log.*
+ha-config/.HA_VERSION
+ha-config/.ha_run.lock
+ha-config/.cache/
+ha-config/.gitignore
+ha-config/backups/
+ha-config/tts/
+ha-config/OZW_Log.txt
+ha-config/*.tar
+ha-config/*.zip
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OpenCode
+.opencode/node_modules/
+.opencode/package-lock.json
+.opencode/.git/
+.opencode/.env
+.opencode/dist/
+.opencode/build/
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+*.secret
+secrets/
+credentials/
